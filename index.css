@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url(background.jpg);
+    background-size: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1;
+    
+  }
+  /* Cuando haces scroll hacia abajo, cambia la opacidad de la imagen de fondo */
+  .navbar.scrolled {
+    background: rgba(0, 0, 0, 2); /* Ajusta el valor de opacidad (el último valor) según lo desees */
+    transition: 2s;
+  }
+  
+  .navbar i {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    
+  }
+  
+  .nav-links a {
+    
+    text-decoration: none;
+    margin: 0 10px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+  }
+  .content {
+    margin-top: 70px;
+    padding: 20px;
+    /* Aquí puedes agregar el contenido de tu página */
+  }
+  
+  /* Cambia el fondo de la barra de navegación a oscuro y más transparente al hacer scroll hacia abajo */
+  .navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.447); /* Fondo oscuro */
+  }
+#logo{
+    height: 100px;
+    width: 70px;
+}  
+/* Estilo para el contenedor principal */
+.content-container {
+  padding-top: 120px; /* Ajusta el valor según la altura de tu barra de navegación */
+}
+
+/* Estilo para el formulario */
+#propertyForm {
+  margin-top: 20px; /* Agrega margen superior para separar el formulario */
+}
+
+#mapa{
+  padding-top: 120px;
+}

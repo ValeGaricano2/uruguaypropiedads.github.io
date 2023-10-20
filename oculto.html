@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uruguay Propiedades, Alquileres, Venta de Apartamentos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="navbar fixed-top">
+        <a href="index.html">
+            <img src="logo.jpg" alt="Logo" id="logo" class="rounded-4">
+        </a>
+        <div class="nav-links">
+            <a href="#">PROPIETARIOS</a>
+            <a href="info.html">INQUILINOS</a>
+            <a href="#">TU GARANTÍA</a>
+            <a href="#">LA EMPRESA</a>
+            <a href="#">CONTACTO</a>
+        </div>
+    </div>
+    <div class="content-container">
+
+    </div>
+    <div class="text-center">
+        <form id="propertyForm" action="info.php" method="post">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required><br><br>
+        
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" required><br><br>
+        
+            <label for="barrio">Barrio:</label>
+            <select id="barrio" name="barrio">
+                <option value="ciudad vieja">Ciudad Vieja</option>
+                <option value="centro">Centro</option>
+                <option value="barrio sur">Barrio Sur</option>
+                <option value="cordon">Cordón</option>
+                <option value="palermo">Palermo</option>
+                <option value="parque rodo">Parque Rodó</option>
+                <option value="punta carretas">Punta Carretas</option>
+                <option value="pocitos">Pocitos</option>
+                <option value="buceo">Buceo</option>
+                <option value="la union">La Unión</option>
+                <option value="la blanqueada">La Blanqueada</option>
+                <option value="parque batlle">Parque Batlle</option>
+                <option value="villa dolores">Villa Dolores</option>
+                <option value="la mondiola">La Mondiola</option>
+                <option value="malvin">Malvin</option>
+                <option value="malvin norte">Malvin Norte</option>
+                <option value="punta gorda">Punta Gorda</option>
+                <option value="carrasco">Carrasco</option>
+                <option value="carrasco norte">Carrasco Norte</option>
+                <option value="tres cruces">Tres Cruces</option>
+                <option value="la comercial">La Comercial</option>
+                <option value="villa muñoz">Villa Muñoz</option>
+                <option value="goes">Goes</option>
+                <option value="aguada">Aguada</option>
+                <option value="reducto">Reducto</option>
+                <option value="arroyo seco">Arroyo Seco</option>
+                <option value="bella vista">Vella Vista</option>
+                <option value="la figurita">La Figurita</option>
+                <option value="jacinto vera">Jacinto Vera</option>
+                <option value="larrañaga">Larrañaga</option>
+                <option value="maroñas">Maroñas</option>
+                <option value="parque guarani">Parque Guaraní</option>
+                <option value="flor de maroñas">Flor de Maroñas</option>
+                <option value="villa española">Villa Española</option>
+                <option value="brazo oriental">Brazo Oriental</option>
+                <option value="atahualpa">Atahualpa</option>
+                <option value="prado">Prado</option>
+                <option value="capurro">Capurro</option>
+                <option value="paso molino">Paso Molino</option>
+                <option value="belvedere">Belvedere</option>
+                <option value="sayago">Sayago</option>
+                <option value="paso de las duranas">Paso de las Duranas</option>
+                <option value="aires puros">Aires Puros</option>
+                <option value="cerrito de la victoria">Cerrito de la Victoria</option>
+                <option value="perez castellano">Pérez Castellano</option>
+                <option value="ituzango">Ituzangó</option>
+                <option value="la cruz">La Cruz de Carrasco</option>
+                <option value="bella italia">Bella Italia</option>
+                <option value="punta de rieles">Punta de Rieles</option>
+                <option value="nueva españa">Nueva España</option>
+                <option value="la chancha">La Chancha</option>
+                <option value="jardines del hipodromo">Jardines del Hipodromo</option>
+                <option value="piedras blancas">Piedras Blancas</option>
+                <option value="marconi">Marconi</option>
+                <option value="placido ellauri">Plácido Ellauri</option>
+                <option value="las acacias">Las Acacias</option>
+                <option value="casavalle">Casavalle</option>
+                <option value="manga">Manga</option>
+                <option value="lavalleja">Lavalleja</option>
+                <option value="peñarol">Peñarol</option>
+                <option value="las retamas">Las Retamas</option>
+                <option value="conciliacion">Conciliación</option>
+                <option value="nuevo paris">Nuevo París</option>
+                <option value="la teja">La Teja</option>
+                <option value="tres ombues">Tres Ombúes</option>
+                <option value="cerro norte">Cerro Norte</option>
+                <option value="villa del cerro">Villa del Cerro</option>
+                <option value="casabo">Casabó</option>
+                <option value="santa catalina">Santa Catalina</option>
+                <option value="la paloma">La Paloma</option>
+                <option value="villa colon">Villa Colón</option>
+                <option value="lezica">Lezica</option>
+                <option value="los bulevares">Los Bulevares</option>                
+                <option value="paso de la arena">Paso de la Arena</option>
+                <!-- Agrega más opciones según sea necesario -->
+            </select><br><br>
+        
+            <label for="garantia">Tipo de Garantía:</label>
+            <select id="garantia" name="garantia">
+              <option value="Ninguna">Ninguna</option>
+              <option value="Fianza">Fianza</option>
+              <option value="Depósito">Depósito</option>
+              <option value="Otro">Otro</option>
+            </select><br><br>
+        
+            <label for="detalles">Detalles:</label>
+            <textarea id="detalles" name="detalles"></textarea><br><br>
+        
+            <label for="fotos">Fotos:</label>
+            <input type="file" id="fotos" name="fotos" multiple><br><br>
+        
+            <button id="guardarPropiedad" type="submit">Guardar Propiedad</button>
+          </form>
+        
+          <h2>Propiedades Agregadas</h2>
+          <ul id="listaPropiedades"></ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="oculto.js"></script>
+</body>
+</html>
